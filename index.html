@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajolotes y sus cualidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: "Nunito Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow: hidden; /* Evita que los fuegos artificiales se salgan de la pantalla */
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: left;
+            font-size: 24px;
+            color: #333;
+            position: relative;
+        }
+
+        header img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        nav {
+            background-color: #e9ecef;
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            gap: 20px;
+        }
+
+        section {
+            padding: 20px;
+            flex: 2;
+            background-color: rgb(255, 165, 228);
+            color: rgb(96, 46, 85);
+        }
+
+        aside {
+            width: 300px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+        }
+
+        .color-fondo {
+            padding: 35px;
+            color: rgb(96, 46, 85);
+            text-align: left;
+        }
+
+        .tamaño {
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h1, h2, h3 {
+            margin: 0 0 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #000000;
+            margin-top: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ffffff;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .firework {
+            position: absolute;
+            bottom: 0;
+            width: 2px;
+            height: 2px;
+            background-color: transparent;
+            animation: launch 2s infinite ease-out;
+        }
+
+        @keyframes launch {
+            0% {
+                transform: translateY(0) scale(0.2);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(-100vh) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-120vh) scale(0);
+                opacity: 0;
+            }
+        }
+
+        .firework:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .firework:nth-child(2) {
+            left: 30%;
+            animation-delay: 0.5s;
+        }
+
+        .firework:nth-child(3) {
+            left: 50%;
+            animation-delay: 1s;
+        }
+
+        .firework:nth-child(4) {
+            left: 70%;
+            animation-delay: 1.5s;
+        }
+
+        .firework:nth-child(5) {
+            left: 90%;
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="tu-imagen.jpg" alt="Imagen del encabezado">
+        <h1>Ajolotes y sus cualidades</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Bienvenida</h2>
+            <p>Hola, esta es mi página web sobre algunas de las cosas que hacen los ajolotes como por ejemplo: su hábitat, su alimentación, sus depredadores, etc. También hablaremos de algunos datos curiosos sobre ellos y de qué cultura vienen.</p>
+
+            <h3>Tabla de Contenidos</h3>
+            <ul>
+                <li><a href="#descripcion">Descripción del Ajolote</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#informacion">Información Adicional</a></li>
+                <li><a href="#bibliografia">Bibliografía</a></li>
+            </ul>
+
+            <h3 id="descripcion">Descripción del Ajolote</h3>
+            <p>Los ajolotes son anfibios endémicos de México. Son conocidos por su capacidad para regenerar extremidades y órganos, así como por su aspecto único que recuerda a una mezcla entre un dragón y una salamandra.</p>
+
+            <h3 id="caracteristicas">Características</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Color</td>
+                        <td>Los ajolotes pueden ser de color rosa, negro o albino.</td>
+                    </tr>
+                    <tr>
+                        <td>Tamaño</td>
+                        <td>Pueden llegar a medir hasta 30 cm de largo.</td>
+                    </tr>
+                    <tr>
+                        <td>Hábitat</td>
+                        <td>Originarios de México, suelen habitar en lagos y canales.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 id="informacion">Información Adicional</h3>
+            <p>Los ajolotes son muy estudiados en biomedicina debido a su capacidad de regeneración. Son también un símbolo cultural en México y están en peligro de extinción debido a la pérdida de hábitat.</p>
+
+            <h3 id="bibliografia">Bibliografía</h3>
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Ambystoma_mexicanum" target="_blank">Wikipedia: Ambystoma mexicanum</a></li>
+                <li><a href="https://www.nationalgeographic.es/animales/axolote-mexicano" target="_blank">National Geographic: Axolote Mexicano</a></li>
+            </ul>
+        </section>
+        <aside>
+            <h3>Información del Autor</h3>
+            <p>Esta página está siendo creada por Allison Murcia Bedoya.</p>
+            <p>Correo: <a href="mailto:allisonmrcia2005@gmail.com">allisonmrcia2005@gmail.com</a></p>
+            <p>Contacto: +57 321 7952258</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados. Creado por Allison Murcia Bedoya</p>
+    </footer>
+    <!-- Animaciones de fuegos artificiales -->
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+    <div class="firework"></div>
+</body>
+</html>
